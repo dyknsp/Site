@@ -1,0 +1,99 @@
+<!doctype html>
+<html lang="ru">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>MORAI AROMA — парфюмерия</title>
+  <meta name="description" content="MORAI AROMA — селективная парфюмерия, ароматы и подбор парфюма.">
+  <style>
+    :root{--bg:#f5f1eb;--ink:#171513;--muted:#756e67;--card:#fffdf9;--line:#ded6cd;--accent:#8a6b4f}
+    *{box-sizing:border-box} html{scroll-behavior:smooth}
+    body{margin:0;background:var(--bg);color:var(--ink);font-family:Arial,Helvetica,sans-serif}
+    a{color:inherit;text-decoration:none}.wrap{max-width:1240px;margin:auto;padding:0 28px}
+    header{position:sticky;top:0;z-index:20;background:rgba(245,241,235,.92);backdrop-filter:blur(16px);border-bottom:1px solid var(--line)}
+    nav{height:74px;display:flex;align-items:center;justify-content:space-between;gap:24px}
+    .logo{font-family:Georgia,serif;font-size:25px;letter-spacing:.12em}.navlinks{display:flex;gap:26px;font-size:13px;text-transform:uppercase;letter-spacing:.08em}
+    .hero{min-height:78vh;display:grid;grid-template-columns:1.05fr .95fr;gap:34px;align-items:center;padding:64px 0}
+    .eyebrow{font-size:12px;text-transform:uppercase;letter-spacing:.22em;color:var(--accent)}
+    h1{font-family:Georgia,serif;font-weight:400;font-size:clamp(52px,8vw,106px);line-height:.9;margin:18px 0 26px}
+    .hero p{max-width:570px;color:var(--muted);font-size:18px;line-height:1.6}
+    .actions{display:flex;gap:12px;margin-top:30px;flex-wrap:wrap}.btn{padding:15px 22px;border:1px solid var(--ink);font-size:12px;text-transform:uppercase;letter-spacing:.1em}
+    .btn.dark{background:var(--ink);color:white}.hero-media{height:650px;position:relative;overflow:hidden;background:#ddd}
+    .hero-media img{width:100%;height:100%;object-fit:cover}
+    .media-note{position:absolute;bottom:18px;left:18px;background:rgba(255,253,249,.88);padding:9px 12px;font-size:11px;letter-spacing:.08em}
+    section{padding:92px 0}.section-head{display:flex;justify-content:space-between;align-items:end;gap:20px;margin-bottom:30px}
+    h2{font-family:Georgia,serif;font-size:48px;font-weight:400;margin:0}.section-head p{max-width:480px;color:var(--muted);line-height:1.5}
+    .grid{display:grid;grid-template-columns:repeat(4,1fr);gap:18px}.product{background:var(--card);border:1px solid var(--line)}
+    .product .pic{aspect-ratio:4/5;background:#e6dfd7;overflow:hidden}.product img{width:100%;height:100%;object-fit:cover}
+    .product-info{padding:17px}.product h3{font-family:Georgia,serif;font-size:22px;font-weight:400;margin:0 0 8px}.notes{font-size:12px;color:var(--muted);min-height:35px}
+    .price{margin-top:15px;font-size:14px}.story{display:grid;grid-template-columns:1fr 1fr;gap:28px;align-items:stretch}
+    .story .text{background:#1b1917;color:#f6f0e8;padding:60px}.story h2{font-size:58px}.story p{line-height:1.7;color:#cfc6bc}
+    .video{position:relative;min-height:520px;background:#201d1a;overflow:hidden}.video video{width:100%;height:100%;object-fit:cover;min-height:520px}
+    .video .fallback{position:absolute;inset:0;display:flex;align-items:center;justify-content:center;color:white;text-align:center;padding:30px}
+    .quiz{background:#e9e0d5;padding:55px;display:grid;grid-template-columns:1fr 1fr;gap:35px}.quiz h2{font-size:56px}.quiz p{color:var(--muted);line-height:1.6}
+    .contact{display:grid;grid-template-columns:1fr 1fr;gap:20px}.contact-card{background:var(--card);border:1px solid var(--line);padding:35px}
+    footer{border-top:1px solid var(--line);padding:28px 0;color:var(--muted);font-size:12px;display:flex;justify-content:space-between}
+    @media(max-width:850px){.hero,.story,.quiz,.contact{grid-template-columns:1fr}.hero-media{height:520px}.grid{grid-template-columns:repeat(2,1fr)}.navlinks{display:none}.story .text{padding:38px}}
+    @media(max-width:520px){.wrap{padding:0 18px}.grid{grid-template-columns:1fr 1fr;gap:10px}section{padding:65px 0}.quiz{padding:30px 22px}.hero{padding:38px 0}.hero-media{height:430px}}
+  </style>
+</head>
+<body>
+<header><div class="wrap"><nav>
+  <a class="logo" href="#">MORAI AROMA</a>
+  <div class="navlinks"><a href="#catalog">Каталог</a><a href="#story">О бренде</a><a href="#selection">Подбор</a><a href="#contacts">Контакты</a></div>
+  <a class="btn dark" href="https://vk.ru/morai_aroma" target="_blank">VK</a>
+</nav></div></header>
+
+<main>
+<section class="wrap hero">
+  <div>
+    <div class="eyebrow">MORAI AROMA · PARFUM</div>
+    <h1>Аромат,<br>который<br>остается.</h1>
+    <p>Авторская витрина парфюмерии с акцентом на атмосферу, визуальную историю и индивидуальный выбор аромата.</p>
+    <div class="actions"><a class="btn dark" href="#catalog">Смотреть ароматы</a><a class="btn" href="#selection">Подобрать аромат</a></div>
+  </div>
+  <div class="hero-media">
+    <img src="media/hero.jpg" alt="MORAI AROMA" onerror="this.style.display='none'">
+    <div class="media-note">ЗАМЕНИТЕ HERO.JPG ФОТОГРАФИЕЙ ИЗ VK</div>
+  </div>
+</section>
+
+<section id="catalog" class="wrap">
+  <div class="section-head"><h2>Коллекция</h2><p>Карточки готовы для наполнения товарами из вашей группы VK: фото, название, ноты, объём и цена.</p></div>
+  <div class="grid">
+    <article class="product"><div class="pic"><img src="media/product-01.jpg" alt="" onerror="this.style.display='none'"></div><div class="product-info"><h3>Название аромата</h3><div class="notes">Верхние ноты · сердце · база</div><div class="price">от 1 990 ₽</div></div></article>
+    <article class="product"><div class="pic"><img src="media/product-02.jpg" alt="" onerror="this.style.display='none'"></div><div class="product-info"><h3>Название аромата</h3><div class="notes">Цветочные · древесные · мускусные</div><div class="price">от 2 490 ₽</div></div></article>
+    <article class="product"><div class="pic"><img src="media/product-03.jpg" alt="" onerror="this.style.display='none'"></div><div class="product-info"><h3>Название аромата</h3><div class="notes">Цитрус · специи · амбра</div><div class="price">от 2 790 ₽</div></div></article>
+    <article class="product"><div class="pic"><img src="media/product-04.jpg" alt="" onerror="this.style.display='none'"></div><div class="product-info"><h3>Название аромата</h3><div class="notes">Ваниль · роза · сандал</div><div class="price">от 2 290 ₽</div></div></article>
+  </div>
+</section>
+
+<section id="story" class="wrap">
+  <div class="story">
+    <div class="text"><div class="eyebrow">ОБ АРОМАТЕ</div><h2>Не просто флакон.</h2><p>MORAI AROMA можно превратить в визуальный магазин, где каждый аромат получает собственный характер. Здесь можно разместить историю бренда, условия распива, подарочные наборы, отзывы и способы доставки.</p><a class="btn" href="https://vk.ru/morai_aroma" target="_blank">Перейти в VK</a></div>
+    <div class="video">
+      <video controls muted loop playsinline poster="media/video-poster.jpg"><source src="media/showreel.mp4" type="video/mp4"></video>
+      <div class="fallback">Добавьте <b>media/showreel.mp4</b><br>— видео из вашей группы VK появится здесь.</div>
+    </div>
+  </div>
+</section>
+
+<section id="selection" class="wrap">
+  <div class="quiz">
+    <div><div class="eyebrow">PERSONAL SELECTION</div><h2>Найти свой аромат.</h2></div>
+    <div><p>Мини-анкета может собирать предпочтения клиента и отправлять заявку менеджеру: любимые ноты, сезон, повод, бюджет и желаемая стойкость.</p><a class="btn dark" href="https://vk.ru/morai_aroma" target="_blank">Получить консультацию</a></div>
+  </div>
+</section>
+
+<section id="contacts" class="wrap">
+  <div class="section-head"><h2>Контакты</h2><p>Связь, заказ и консультация — через VK. При необходимости сюда можно добавить Telegram, WhatsApp, телефон и адрес магазина.</p></div>
+  <div class="contact">
+    <div class="contact-card"><div class="eyebrow">VK</div><h3>MORAI AROMA</h3><p><a href="https://vk.ru/morai_aroma" target="_blank">vk.ru/morai_aroma</a></p></div>
+    <div class="contact-card"><div class="eyebrow">ЗАКАЗ</div><h3>Напишите нам</h3><p>Выберите аромат в каталоге или расскажите, какое настроение хотите получить — менеджер поможет с выбором.</p></div>
+  </div>
+</section>
+</main>
+
+<footer><div class="wrap" style="width:100%;display:flex;justify-content:space-between;gap:20px"><span>© MORAI AROMA</span><span>Парфюмерный магазин</span></div></footer>
+</body>
+</html>
